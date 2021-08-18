@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Most Common Word Finder</title>
+</head>
+<body>
+    <div id="form" class="col">
+        <h1>Most Common Word Finder</h1>
+        <p>Enter your text below, and click submit. The most common word will be displayed on the right side.</p>
+        <textarea id="user-input" cols="30" rows="10"></textarea>
+        <button type="button" class="btn" onclick="parseText()">Submit</button>
+        <button onclick="pasteLorem()" class="btn">Use Lorem Ipsum</button>
+    </div>
+    <div id="result" class="col">
+        <p>The most common word is "<span id="mcw">###</span>", occurring a total of <span id="count">###</span> times.</p>
+        <p id="input"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
